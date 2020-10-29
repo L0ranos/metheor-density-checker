@@ -1,0 +1,42 @@
+body{
+    background-color: #bed8ff;
+    display:flex;
+    align-items: center;
+    align-content: flex-start;
+    flex-flow: column;
+}
+
+h1{
+    font-size: 1,5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+label{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+input{
+    border-radius: 5px;
+    border:2px solid black;
+}
+.header{
+    background-color: lightslategray;
+    width: 100%;
+    min-height: 5%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.content{
+    width:50%;
+    margin-top: 10px;
+    padding-top: 10px;
+    background-color: lightsteelblue;
+    flex-wrap: wrap;
+    text-align: center;
+    display:flex;
+    flex-flow: column;
+}
+.input-container{
+    margin:4;
+}
