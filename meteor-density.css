@@ -87,10 +87,10 @@ input {
     height: 400px;
 }
 
-.fa-shapes {
-  font-size: 150px;
+.measurement-icon{
+min-height: 150px;
+min-width: 150px;
+height:1.5em;
+width: 1.5em;
 }
 
-.fa-balance-scale {
-  font-size: 150px;
-}
