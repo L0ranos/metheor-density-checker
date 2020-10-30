@@ -1,42 +1,91 @@
-body{
-    background-color: #bed8ff;
-    display:flex;
-    align-items: center;
-    align-content: flex-start;
-    flex-flow: column;
+body {
+  background-color: #bed8ff;
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  flex-flow: column;
 }
 
-h1{
-    font-size: 1,5em;
-    font-family: 'Times New Roman', Times, serif;
+h1 {
+  font-size: 1, 5em;
+  font-family: "Times New Roman", Times, serif;
 }
 
-label{
-    margin-left: 5px;
-    margin-right: 5px;
+label {
+  margin: 5px;
+  font-size: 2em;
 }
 
-input{
-    border-radius: 5px;
-    border:2px solid black;
+input {
+  border-radius: 5px;
+  border: 2px solid black;
+  min-height: 40px;
+  max-width: 150px;
+  font-size: 36px;
+  padding: 2px;
 }
-.header{
-    background-color: lightslategray;
-    width: 100%;
-    min-height: 5%;
-    text-align: center;
-    flex-wrap: wrap;
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.content{
-    width:50%;
-    margin-top: 10px;
-    padding-top: 10px;
-    background-color: lightsteelblue;
-    flex-wrap: wrap;
-    text-align: center;
-    display:flex;
-    flex-flow: column;
+
+.input-aggregator {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.input-container{
-    margin:4;
+
+.submit-input {
+  background-color: #008cba;
+  border: none;
+  min-height: 50px;
+  min-width: 120px;
+  font-size: large;
+}
+.header {
+  background-color: lightslategray;
+  width: 100%;
+  min-height: 5%;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.content {
+  width: 50%;
+  min-width: 250px;
+  margin-top: 10px;
+  padding-top: 10px;
+  background-color: lightsteelblue;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+}
+.input-container {
+  margin: 5;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  min-width: 250px;
+}
+
+.results {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.graph-canvas{
+    width:600px;
+    height: 300px;
+}
+
+.fa-shapes {
+  font-size: 150px;
+}
+
+.fa-balance-scale {
+  font-size: 150px;
 }

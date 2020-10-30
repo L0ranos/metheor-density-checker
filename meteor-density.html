@@ -1,18 +1,45 @@
 <html>
   <head>
     <link rel="stylesheet" href="meteor-density.css" />
+    <link rel="stylesheet" href="static/css/all.css" />
     <title>Wyznacz gęstość meteoru!</title>
   </head>
   <body>
+    <script src="meteor-density.js"></script>
     <div class="header"><h1>Sprawdź, czy to meteoryt!</h1></div>
     <div class="content">
-      <form>
-        <div class="input-container"><label>Masa obiektu</label><input type="text" name="mass" />
+      <div class="form-container">
+        <div class="input-aggregator">
+          <div class="input-container">
+            <i class="fas fa-balance-scale"></i><label>Masa obiektu</label
+            ><input
+              type="number"
+              name="mass"
+              onchange="MassChange(this.value)"
+            />
+          </div>
+          <div class="input-container">
+            <i class="fas fa-shapes"></i><label>Objętość obiektu</label
+            ><input
+              type="text"
+              name="volume"
+              onchange="VolumeChange(this.value)"
+            />
+          </div>
         </div>
-        <div class="input-container"><label>Objętość obiektu</label><input type="text" name="volume" />
+        <div class="input-container">
+          <input
+            class="submit-input"
+            type="button"
+            value="Sprawdź!"
+            onclick="CheckDensity()"
+          />
         </div>
-        <div class="input-container"><input type="submit" value="Sprawdź!"/></div>
-      </form>
+      </div>
+      <div class="results">
+        Gęstość obiektu to: <span id="result-value">?</span> kg/m<sup>3</sup>
+      </div>
+      <canvas id="graph" class="graph-canvas"></canvas>
     </div>
   </body>
 </html>
