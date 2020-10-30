@@ -11,7 +11,7 @@
       <div class="form-container">
         <div class="input-aggregator">
           <div class="input-container">
-            <i class="fas fa-balance-scale"></i><label>Masa obiektu</label
+            <i class="fas fa-balance-scale"></i><label>Masa obiektu w gramach</label
             ><input
               type="number"
               name="mass"
@@ -19,9 +19,9 @@
             />
           </div>
           <div class="input-container">
-            <i class="fas fa-shapes"></i><label>Objętość obiektu</label
+            <i class="fas fa-shapes"></i><label>Masa wypartej wody w gramach</label
             ><input
-              type="text"
+              type="number"
               name="volume"
               onchange="VolumeChange(this.value)"
             />
@@ -37,9 +37,9 @@
         </div>
       </div>
       <div class="results">
-        Gęstość obiektu to: <span id="result-value">?</span> kg/m<sup>3</sup>
+        Gęstość obiektu to: <span id="result-value">?</span> g/cm<sup>3</sup>. <span id="result-verdict"></span>
       </div>
-      <canvas id="graph" class="graph-canvas"></canvas>
+      <canvas id="graph" height="400" width="300" class="graph-canvas"></canvas>
     </div>
   </body>
 </html>
